@@ -2,6 +2,8 @@
 Small, bare minimum projects with some useful functionality written in Python and Bash. The following is a list of scripts in this repository:
 - web_scraper.py - web scraper for https://afltables.com/afl/stats/2024.html#. Scrapes Adelaide player numbers, names, games played and writes them into a .CSV file.
 - fc.sh - a find-and-copy script written in Bash
+- palette_generator.py
+---
 ## palette_generator.py 
 Has a single function that generates colour palettes based on a list of hex value inputs
 - Allows size to be passed as a tuple (_width_, _height_) 
