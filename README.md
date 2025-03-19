@@ -5,8 +5,8 @@ Small, bare minimum projects with some useful functionality written in Python an
 - palette_generator.py
 ---
 ## palette_generator.py 
-Has a single function that generates colour palettes based on a list of hex value inputs
-- Allows size to be passed as a tuple (_width_, _height_) 
+Has a single function that generates colour palettes based on a list of hex value inputs:
+- allows size to be passed as a tuple (_width_, _height_) 
 - saturation values for selective colours as a dictionary 
 ### Example:
 ```python 
