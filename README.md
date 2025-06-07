@@ -17,8 +17,13 @@ palette_generator(web_palette, with_saturation={'#7BB8E9': 0.32, '#074869': 0.54
 
 --- 
 
+## pdf_spider.py
+Uses scrapy and pymupdf package to search for a word/phrase in past papers. It lists down papers containing the word/phrase along with the page number in a text file.
 
-
-
-
+### Example
+```bash
+scrapy runspider pdf_spider.py
+```
+#### Output
+![image](image.png)
 

@@ -6,15 +6,16 @@ import io
 class Extractor(sc.Spider):
     name = 'PDF Text Spider'
     allowed_domains = ['pastpapers.papacambridge.com']
-    start_urls = ['https://pastpapers.papacambridge.com/papers/caie/igcse-accounting-0452-2022-oct-nov']
+    start_urls = ['https://pastpapers.papacambridge.com/papers/caie/igcse-physics-0625-2024-may-june']
 
     def parse(self, response):
         self.logger.info(f'Parsing page: {response.url}')
         links = response.css("a::attr(href)").getall()
 
+        # To search recursively:
         # for link in links:
         #     yield response.follow(link, callback=self.parse)
-        
+
         pdfs = response.css('a[href$=".pdf"]::attr(href)').getall()
         # pdfs.extend(response.xpath('//a[contains(@href, "/upload/")]/@href').getall())
 
@@ -30,7 +31,7 @@ class Extractor(sc.Spider):
                file_name = response.url.split("/")[-1]
                for pg_num in range(len(paper)):
                     page = paper.load_page(pg_num)
-                    needle = 'Prepare the income statement'
+                    needle = 'light'
                     matches = page.search_for(needle)
                     if matches != []:
                         print(("{0} page {1} shows '{2}' in the following locations:").format(file_name, pg_num, needle))
