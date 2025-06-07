@@ -25,5 +25,6 @@ Uses scrapy and pymupdf package to search for a word/phrase in past papers. It l
 scrapy runspider pdf_spider.py
 ```
 #### Output
-![image](image.png)
+![image](https://github.com/user-attachments/assets/d16fdeba-57f8-41f9-a45a-eebc99fc8150)
+
 
