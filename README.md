@@ -1,6 +1,6 @@
 # Scripts
 Small, bare minimum projects with some useful functionality written in Python and Bash. The following is a list of scripts in this repository:
-- fc.sh - a find-and-copy script written in Bash (<span style="color:red;"currently being updated.</span>)
+- fc.sh - a find-and-copy script written in Bash (<span> style="color:red;"currently being updated.</span>)
 - palette_generator.py
 - pdf_spider.py
 ---
